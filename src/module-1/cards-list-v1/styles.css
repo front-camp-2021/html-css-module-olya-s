@@ -6,7 +6,8 @@
 }
 .product-items {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, 486px);
   grid-gap: 25px;
   justify-content: center;
   padding: 25px;
@@ -16,7 +17,6 @@
   list-style-type: none;
 }
 .product-item {
-  width: 400px;
   font-weight: 400;
   background: #FFFFFF;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
