@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body class="fw-light bg-light px-sm-3 px-md-4">
+  <header class="container-fluid py-2 py-sm-3">
+    <nav class="main-navigation">
+      <a href="index.html" class="main-header-logo">
+        <img class="d-inline-block" src="images/logo.svg" alt="shop logo">
+        <h1 class="d-inline-block">Online Store</h1>
+      </a>
+    </nav>
+  </header>
+  <main class="container-fluid fw-light">
+    <div class="row">
+      <nav class="pb-3" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"><img src="images/home.svg" alt="Home"></a></li>
+          <li class="breadcrumb-item"><a href="#">eCommerce</a></li>
+          <li class="breadcrumb-item" aria-current="page">Electronics</li>
+        </ul>
+      </nav>
+      <section class="col-md-4 col-lg-3 d-none d-md-flex flex-column mb-4">
+        <form class="d-flex flex-column h-100" method="get" action="#">
+          <h4 class="mb-3 d-flex justify-content-between fs-5">Filters
+            <button class="bg-white border-0 rounded-3 shadow-sm py-1 px-2" type="submit">&lt;&lt;</button>
+          </h4>
+          <div class="bg-white rounded-3 shadow-sm pt-2 px-4 mb-4 flex-grow-1">
+            <fieldset>
+              <legend class="fs-5 fw-bold">Multi Range</legend>
+              <ul class="list-unstyled">
+                <li class="filter-option radio">
+                  <input type="radio" id="filter-$10" name="price">
+                  <label class="ms-1" for="filter-$10">$10</label>
+                </li>
+                <li class="filter-option radio">
+                  <input type="radio" id="filter-$10-$100" name="price">
+                  <label class="ms-1" for="filter-$10-$100">$10-$100</label>
+                </li>
+                <li class="filter-option radio">
+                  <input type="radio" id="filter-$100-$500" name="price">
+                  <label class="ms-1" for="filter-$100-$500">$100-$500</label>
+                </li>
+                <li class="filter-option radio">
+                  <input type="radio" id="filter-$500" name="price">
+                  <label class="ms-1" for="filter-$500">$500</label>
+                </li>
+                <li class="filter-option radio">
+                  <input type="radio" id="filter-all" name="price" checked>
+                  <label class="ms-1" for="filter-all">All</label>
+                </li>
+              </ul>
+            </fieldset>
+            <hr>
+            <fieldset>
+              <legend class="fs-5 fw-bold">Category</legend>
+              <ul class="list-unstyled">
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-cell-phones">
+                    <label class="ms-2" for="filter-cell-phones">Cell Phones</label>
+                  </div>
+                  <span class="filter-count">1920</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-computers-and-tablets">
+                    <label class="ms-2" for="filter-computers-and-tablets">Computers & Tablets</label>
+                  </div>
+                  <span class="filter-count">1820</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-cell-phone-accessories" checked>
+                    <label class="ms-2" for="filter-cell-phone-accessories">Cell Phone Accessories</label>
+                  </div>
+                  <span class="filter-count">462</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-appliances">
+                    <label class="ms-2" for="filter-appliances">Appliances</label>
+                  </div>
+                  <span class="filter-count">6556</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-audio">
+                    <label class="ms-2" for="filter-audio">Audio</label>
+                  </div>
+                  <span class="filter-count">120</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-iphone-accessories">
+                    <label class="ms-2" for="filter-iphone-accessories">iPhone Accessories</label>
+                  </div>
+                  <span class="filter-count">353</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-cameras-and-camcorders">
+                    <label class="ms-2" for="filter-cameras-and-camcorders">Cameras & Camcorders</label>
+                  </div>
+                  <span class="filter-count">45</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-iphone-cases-and-clips">
+                    <label class="ms-2" for="filter-iphone-cases-and-clips">iPhone Cases & Clips</label>
+                  </div>
+                  <span class="filter-count">456</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-tv-and-home-theater">
+                    <label class="ms-2" for="filter-tv-and-home-theater">TV & Home Theater</label>
+                  </div>
+                  <span class="filter-count">55</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-small-kitchen-appliances">
+                    <label class="ms-2" for="filter-small-kitchen-appliances">Small Kitchen Appliances</label>
+                  </div>
+                  <span class="filter-count">10</span>
+                </li>
+              </ul>
+            </fieldset>
+            <hr>
+            <fieldset>
+              <legend class="fs-5 fw-bold">Brand</legend>
+              <ul class="list-unstyled">
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-insigni" name="insigni">
+                    <label class="ms-2" for="filter-insigni">Insigni</label>
+                  </div>
+                  <span class="filter-count">220</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-samsung" name="samsung">
+                    <label class="ms-2" for="filter-samsung">Samsung</label>
+                  </div>
+                  <span class="filter-count">120</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-apple" name="apple">
+                    <label class="ms-2" for="filter-apple">Apple</label>
+                  </div>
+                  <span class="filter-count">320</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-hp" name="hp">
+                    <label class="ms-2" for="filter-hp">HP</label>
+                  </div>
+                  <span class="filter-count">32</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-sony" name="sony">
+                    <label class="ms-2" for="filter-sony">Sony</label>
+                  </div>
+                  <span class="filter-count">520</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-metra" name="metra">
+                    <label class="ms-2" for="filter-metra">Metra</label>
+                  </div>
+                  <span class="filter-count">55</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-dyne" name="dyne">
+                    <label class="ms-2" for="filter-dyne">Dyne</label>
+                  </div>
+                  <span class="filter-count">120</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-lg" name="lg">
+                    <label class="ms-2" for="filter-lg">LG</label>
+                  </div>
+                  <span class="filter-count">98</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-canon" name="canon">
+                    <label class="ms-2" for="filter-canon">Canon</label>
+                  </div>
+                  <span class="filter-count">99</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <input type="checkbox" id="filter-speck" name="speck">
+                    <label class="ms-2" for="filter-speck">Speck</label>
+                  </div>
+                  <span class="filter-count">575</span>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <button class="btn btn-primary text-uppercase">Clear all filters</button>
+        </form>
+      </section>
+      <section
+        class="col-md-8 col-lg-9 d-flex flex-column justify-content-start align-items-stretch gap-2 gap-sm-3 gap-md-4">
+        <h2 class="visually-hidden">Products catalog</h2>
+        <form method="get" action="#">
+          <div class="d-flex justify-content-between">
+            <p>7,618 results found</p>
+            <button class="bg-primary border-0 rounded-3 py-1 px-2 mb-3">
+              <img src="images/like.svg" alt="heart icon">
+            </button>
+          </div>
+          <div class="position-relative">
+            <input class="container-fluid p-2 border-0 rounded-3 shadow-sm" type="text" placeholder="Search">
+            <img class="position-absolute top-0 end-0 mt-2 me-3" src="images/search.svg" alt="search icon">
+          </div>
+        </form>
+        <div>
+          <ul class="list-unstyled row row-cols-1 row-cols-sm-2 row-cols-md-1 row-cols-lg-2 row-cols-xl-3 mb-0">
+            <li class="pb-2 pb-sm-3 pb-md-4">
+              <div class="card h-100 bg-white rounded-3 shadow-sm justify-content-end">
+                <div>
+                  <div class="card-image-top d-flex justify-content-center p-4">
+                    <img class="w-50" src="images/apple-watch.jpg" alt="product image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text clearfix">
+                      <span class="float-start bg-primary rounded-3 text-white p-2">3.4
+                        <img src="images/star.svg" alt="star icon">
+                      </span>
+                      <span class="float-end p-2">$399</span>
+                    </p>
+                    <h5 class="card-title">Apple Watch'Series 4 GPS</h5>
+                    <p class="card-text">Redesigned from scratch and completely revised.</p>
+                  </div>
+                </div>
+                <div class="btn-group" role="group" aria-label="Wishlist & cart">
+                  <button class="btn btn-secondary border-0 text-uppercase">
+                    <img src="images/heart.svg" alt="heart icon">
+                    Wishlist
+                  </button>
+                  <button class="btn btn-primary border-0 text-white text-uppercase">
+                    <img src="images/shopping-bag.svg" alt="cart icon">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="pb-2 pb-sm-3 pb-md-4">
+              <div class="card h-100 bg-white rounded-3 shadow-sm justify-content-end">
+                <div>
+                  <div class="card-image-top d-flex justify-content-center p-4">
+                    <img class="w-25" src="images/jbl-speaker.jpg" alt="product image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text clearfix">
+                      <span class="float-end p-2">$199</span>
+                    </p>
+                    <h5 class="card-title">JBL Speaker</h5>
+                    <p class="card-text">Redesigned from scratch and completely revised.</p>
+                  </div>
+                </div>
+                <div class="btn-group" role="group" aria-label="Wishlist & cart">
+                  <button class="btn btn-secondary border-0 text-uppercase">
+                    <img src="images/heart.svg" alt="heart icon">
+                    Wishlist
+                  </button>
+                  <button class="btn btn-primary border-0 text-white text-uppercase">
+                    <img src="images/shopping-bag.svg" alt="cart icon">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="pb-2 pb-sm-3 pb-md-4">
+              <div class="card h-100 bg-white rounded-3 shadow-sm justify-content-end">
+                <div>
+                  <div class="card-image-top d-flex justify-content-center p-4">
+                    <img class="w-50" src="images/iphone-x.jpg" alt="product image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text clearfix">
+                      <span class="float-end p-2">$899</span>
+                    </p>
+                    <h5 class="card-title">Apple iPhone X 128GB</h5>
+                    <p class="card-text">Redesigned from scratch and completely revised.</p>
+                  </div>
+                </div>
+                <div class="btn-group" role="group" aria-label="Wishlist & cart">
+                  <button class="btn btn-secondary border-0 text-uppercase">
+                    <img src="images/heart.svg" alt="heart icon">
+                    Wishlist
+                  </button>
+                  <button class="btn btn-primary border-0 text-white text-uppercase">
+                    <img src="images/shopping-bag.svg" alt="cart icon">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="pb-2 pb-sm-3 pb-md-4">
+              <div class="card h-100 bg-white rounded-3 shadow-sm justify-content-end">
+                <div>
+                  <div class="card-image-top d-flex justify-content-center p-4">
+                    <img class="w-50" src="images/beats-headphones.jpg" alt="product image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text clearfix">
+                      <span class="float-end p-2">$459</span>
+                    </p>
+                    <h5 class="card-title">Beats Headphones</h5>
+                    <p class="card-text">Redesigned from scratch and completely revised.</p>
+                  </div>
+                </div>
+                <div class="btn-group" role="group" aria-label="Wishlist & cart">
+                  <button class="btn btn-secondary border-0 text-uppercase">
+                    <img src="images/heart.svg" alt="heart icon">
+                    Wishlist
+                  </button>
+                  <button class="btn btn-primary border-0 text-white text-uppercase">
+                    <img src="images/shopping-bag.svg" alt="cart icon">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="pb-2 pb-sm-3 pb-md-4">
+              <div class="card h-100 bg-white rounded-3 shadow-sm justify-content-end">
+                <div>
+                  <div class="card-image-top d-flex justify-content-center p-4">
+                    <img class="w-50" src="images/macbook-pro.jpg" alt="product image">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text clearfix">
+                      <span class="float-end p-2">$2499</span>
+                    </p>
+                    <h5 class="card-title">Apple Macbook Pro 512GB SSD</h5>
+                    <p class="card-text">Redesigned from scratch and completely revised.</p>
+                  </div>
+                </div>
+                <div class="btn-group" role="group" aria-label="Wishlist & cart">
+                  <button class="btn btn-secondary border-0 text-uppercase">
+                    <img src="images/heart.svg" alt="heart icon">
+                    Wishlist
+                  </button>
+                  <button class="btn btn-primary border-0 text-white text-uppercase">
+                    <img src="images/shopping-bag.svg" alt="cart icon">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <nav class="d-flex justify-content-center mb-3 gap-1 gap-md-2" aria-label="Page navigation">
+      <ul class="pagination pagination-sm bg-secondary rounded-pill mb-0">
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#" aria-label="Previous">
+            <span aria-hidden="true">&lt;</span>
+            <span class="sr-only visually-hidden">Previous</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="pagination pagination-sm bg-secondary rounded-pill mb-0">
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">4</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">5</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link text-dark border-0 rounded-circle" href="#">6</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">7</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">8</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">9</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-circle" href="#">10</a>
+        </li>
+      </ul>
+      <ul class="pagination pagination-sm bg-secondary rounded-pill mb-0">
+        <li class="page-item">
+          <a class="page-link text-dark bg-secondary border-0 rounded-pill" href="#" aria-label="Next">
+            <span aria-hidden="true">&gt;</span>
+            <span class="sr-only visually-hidden">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </main>
+</body>
+
+</html>
