@@ -1,1 +1,9 @@
-
+@use './config/_main';
+@use './components/_header';
+@use './components/_breadcrumbs';
+@use './components/_filter-form';
+@use './components/_filters';
+@use './components/_catalog';
+@use './components/_search';
+@use './components/_card';
+@use './components/_pagination';

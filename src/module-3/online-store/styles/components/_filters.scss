@@ -1,0 +1,54 @@
+@use './config/vars' as*;
+@use './config/mixins' as *;
+
+.filters {
+  width: 95%;
+
+  &__group   {
+    @include text-format(600);
+    margin-bottom: 28px;
+  }
+
+  input {
+    opacity: 0;
+  }
+
+  label:hover,
+  input:hover {
+    cursor: pointer;
+  }
+
+  hr {
+    margin: 28px 0;
+  }
+
+  &__option {
+    &_radio label::before {
+      border-radius: 50%;
+    }
+
+    &_checkbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      label::before {
+        border-radius: 3px;
+      }
+    }
+
+    label::before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-left: -15px;
+      margin-right: 10px;
+      border: 1px solid $border-color;
+    }
+
+    input:checked + label::before {
+      background: $bg-primary;
+    }
+  }
+}

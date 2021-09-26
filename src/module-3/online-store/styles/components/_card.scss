@@ -1,0 +1,91 @@
+@use './config/vars' as *;
+@use './config/mixins' as *;
+
+.card {
+  display: grid;
+  align-items: end;
+  width: 100%;
+  min-width: 300px;
+  @include text-format(400, 14px);
+  background: $white;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 337px;
+
+    img {
+      max-width: 80%;
+    }
+  }
+
+  &__body {
+    padding: 0 24px;
+
+    h4 {
+      margin-top: 16px;
+      @include text-format(400, 16px);
+    }
+
+    p {
+      height: 30px;
+      clear: both;
+      font-size: 12px;
+    }
+  }
+
+  &__rate {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    width: 47px;
+    padding: 6px 9px;
+    @include text-format(400, 14px);
+    background: $bg-primary;
+    color: $white;
+    border-radius: 3px;
+  }
+
+  &__price {
+    float: right;
+    @include text-format(400, 14px);
+  }
+
+  &__footer {
+    display: flex;
+    height: 45px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: none;
+    @include text-format(600, 14px);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &_wishlist {
+      background: $bg-secondary;
+      border-bottom-left-radius: $border-radius;
+
+      img {
+        margin-right: 9px;
+      }
+    }
+
+    &_cart {
+      background: $bg-primary;
+      color: $white;
+      border-bottom-right-radius: $border-radius;
+      
+      img {
+        margin-right: 12px;
+      }
+    }
+  }
+}
