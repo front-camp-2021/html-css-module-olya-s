@@ -2,9 +2,11 @@
 @use './config/mixins' as *;
 
 .card {
-  display: grid;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   width: 100%;
+  height: 100%;
   min-width: 300px;
   @include text-format(400, 14px);
   background: $white;
@@ -15,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 337px;
+    padding: 30px;
 
     img {
       max-width: 80%;
@@ -24,17 +26,21 @@
 
   &__body {
     padding: 0 24px;
+    font-size: 12px;
 
-    h4 {
-      margin-top: 16px;
-      @include text-format(400, 16px);
-    }
-
-    p {
+    div {
       height: 30px;
       clear: both;
-      font-size: 12px;
     }
+  }
+
+  &__title {
+    margin-top: 16px;
+    @include text-format(400, 16px);
+  }
+
+  &__text {
+    padding-bottom: 16px;
   }
 
   &__rate {
