@@ -1,0 +1,27 @@
+@use './config/vars' as *;
+@use './config/mixins' as *;
+
+.header {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
+
+  &__logo-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__image {
+    width: 65px;    
+  }
+
+  &__title {
+    @include text-format(600, 32px);
+    color: $primary-color;
+    
+    @media screen and (min-width: 720px) {
+      font-size: 48px;
+    }
+  }
+}

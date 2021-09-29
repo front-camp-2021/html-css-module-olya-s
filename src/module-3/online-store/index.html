@@ -11,6 +11,365 @@
 
 <body>
 
+  <header class="header">
+    <nav>
+      <a href="index.html" class="header__logo-link">
+        <img class="header__image" src="images/logo.svg" alt="shop logo">
+        <h1 class="header__title">Online Store</h1>
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="index.html"><img src="images/home.svg" alt="Home"></a></li>
+      <li class="breadcrumbs__item"><a href="#">eCommerce</a></li>
+      <li class="breadcrumbs__item breadcrumbs__item_current">Electronics</li>
+    </ul>
+    <form class="filter-form">
+      <h2 class="filter-form__title">Filters
+        <button class="filter-form__submit-button" type="submit">&lt;&lt;</button>
+      </h2>
+      <div class="filter-form__list-wrapper">
+        <div class="filters" method="get" action="#">
+          <fieldset>
+            <legend class="filters__group">Multi Range</legend>
+            <ul>
+              <li class="filters__option filters__option_radio">
+                <input type="radio" id="filter-$10" name="price">
+                <label for="filter-$10">$10</label>
+              </li>
+              <li class="filters__option filters__option_radio">
+                <input type="radio" id="filter-$10-$100" name="price">
+                <label for="filter-$10-$100">$10-$100</label>
+              </li>
+              <li class="filters__option filters__option_radio">
+                <input type="radio" id="filter-$100-$500" name="price">
+                <label for="filter-$100-$500">$100-$500</label>
+              </li>
+              <li class="filters__option filters__option_radio">
+                <input type="radio" id="filter-$500" name="price">
+                <label for="filter-$500">$500</label>
+              </li>
+              <li class="filters__option filters__option_radio">
+                <input type="radio" id="filter-all" name="price" checked>
+                <label for="filter-all">All</label>
+              </li>
+            </ul>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <legend class="filters__group">Category</legend>
+            <ul>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-cell-phones">
+                  <label for="filter-cell-phones">Cell Phones</label>
+                </div>
+                <span class="filters__count">1920</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-computers-and-tablets">
+                  <label for="filter-computers-and-tablets">Computers & Tablets</label>
+                </div>
+                <span class="filters__count">1820</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-cell-phone-accessories" checked>
+                  <label for="filter-cell-phone-accessories">Cell Phone Accessories</label>
+                </div>
+                <span class="filters__count">462</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-appliances">
+                  <label for="filter-appliances">Appliances</label>
+                </div>
+                <span class="filters__count">6556</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-audio">
+                  <label for="filter-audio">Audio</label>
+                </div>
+                <span class="filters__count">120</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-iphone-accessories">
+                  <label for="filter-iphone-accessories">iPhone Accessories</label>
+                </div>
+                <span class="filters__count">353</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-cameras-and-camcorders">
+                  <label for="filter-cameras-and-camcorders">Cameras & Camcorders</label>
+                </div>
+                <span class="filters__count">45</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-iphone-cases-and-clips">
+                  <label for="filter-iphone-cases-and-clips">iPhone Cases & Clips</label>
+                </div>
+                <span class="filters__count">456</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-tv-and-home-theater">
+                  <label for="filter-tv-and-home-theater">TV & Home Theater</label>
+                </div>
+                <span class="filters__count">55</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-small-kitchen-appliances">
+                  <label for="filter-small-kitchen-appliances">Small Kitchen Appliances</label>
+                </div>
+                <span class="filters__count">10</span>
+              </li>
+            </ul>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <legend class="filters__group">Brand</legend>
+            <ul>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-insigni" name="insigni">
+                  <label for="filter-insigni">Insigni</label>
+                </div>
+                <span class="filters__count">220</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-samsung" name="samsung">
+                  <label for="filter-samsung">Samsung</label>
+                </div>
+                <span class="filters__count">120</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-apple" name="apple">
+                  <label for="filter-apple">Apple</label>
+                </div>
+                <span class="filters__count">320</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-hp" name="hp">
+                  <label for="filter-hp">HP</label>
+                </div>
+                <span class="filters__count">32</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-sony" name="sony">
+                  <label for="filter-sony">Sony</label>
+                </div>
+                <span class="filters__count">520</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-metra" name="metra">
+                  <label for="filter-metra">Metra</label>
+                </div>
+                <span class="filters__count">55</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-dyne" name="dyne">
+                  <label for="filter-dyne">Dyne</label>
+                </div>
+                <span class="filters__count">120</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-lg" name="lg">
+                  <label for="filter-lg">LG</label>
+                </div>
+                <span class="filters__count">98</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-canon" name="canon">
+                  <label for="filter-canon">Canon</label>
+                </div>
+                <span class="filters__count">99</span>
+              </li>
+              <li class="filters__option filters__option_checkbox">
+                <div>
+                  <input type="checkbox" id="filter-speck" name="speck">
+                  <label for="filter-speck">Speck</label>
+                </div>
+                <span class="filters__count">575</span>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+      <button class="filter-form__clear-button">Clear all filters</button>
+    </form>
+    <section>
+      <h2 class="visually-hidden">Products catalog</h2>
+      <form class="search" method="get" action="#">
+        <div class="search__results">
+          <p>7,618 results found</p>
+          <button class="search__button-like">
+            <img src="images/like.svg" alt="heart icon">
+          </button>
+        </div>
+        <label for="search-input" hidden>Search</label>
+        <input class="search__input" id="search-input" type="text" placeholder="Search">
+        <img class="search__image" src="images/search.svg" alt="search icon">
+      </form>
+      <ul class="catalog">
+        <li>
+          <div class="catalog__item card">
+            <div class="card__image">
+              <img src="images/apple-watch.jpg" alt="product image">
+            </div>
+            <div class="card__body">
+              <div>
+                <span class="card__rate">3.4
+                  <img src="images/star.svg" alt="star icon">
+                </span>
+                <span class="card__price">$399</span>
+              </div>
+              <h4 class="card__title">Apple Watch'Series 4 GPS</h4>
+              <p class="card__text">Redesigned from scratch and completely revised.</p>
+            </div>
+            <div class="card__footer">
+              <button class="card__button card__button_wishlist">
+                <img src="images/heart.svg" alt="heart icon">
+                Wishlist
+              </button>
+              <button class="card__button card__button_cart">
+                <img src="images/shopping-bag.svg" alt="cart icon">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog__item card">
+            <div class="card__image">
+              <img src="images/jbl-speaker.jpg" alt="product image">
+            </div>
+            <div class="card__body">
+              <div>
+                <span class="card__price">$199</span>
+              </div>
+              <h4 class="card__title">JBL Speaker</h4>
+              <p class="card__text">Redesigned from scratch and completely revised.</p>
+            </div>
+            <div class="card__footer">
+              <button class="card__button card__button_wishlist">
+                <img src="images/heart.svg" alt="heart icon">
+                Wishlist
+              </button>
+              <button class="card__button card__button_cart">
+                <img src="images/shopping-bag.svg" alt="cart icon">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog__item card">
+            <div class="card__image">
+              <img src="images/iphone-x.jpg" alt="product image">
+            </div>
+            <div class="card__body">
+              <div>
+                <span class="card__price">$899</span>
+              </div>
+              <h4 class="card__title">Apple iPhone X 128GB</h4>
+              <p class="card__text">Redesigned from scratch and completely revised.</p>
+            </div>
+            <div class="card__footer">
+              <button class="card__button card__button_wishlist">
+                <img src="images/heart.svg" alt="heart icon">
+                Wishlist
+              </button>
+              <button class="card__button card__button_cart">
+                <img src="images/shopping-bag.svg" alt="cart icon">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog__item card">
+            <div class="card__image">
+              <img src="images/beats-headphones.jpg" alt="product image">
+            </div>
+            <div class="card__body">
+              <div>
+                <span class="card__price">$459</span>
+              </div>
+              <h4 class="card__title">Beats Headphones</h4>
+              <p class="card__text">Redesigned from scratch and completely revised.</p>
+            </div>
+            <div class="card__footer">
+              <button class="card__button card__button_wishlist">
+                <img src="images/heart.svg" alt="heart icon">
+                Wishlist
+              </button>
+              <button class="card__button card__button_cart">
+                <img src="images/shopping-bag.svg" alt="cart icon">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog__item card">
+            <div class="card__image">
+              <img src="images/macbook-pro.jpg" alt="product image">
+            </div>
+            <div class="card__body">
+              <div>
+                <span class="card__price">$2499</span>
+              </div>
+              <h4 class="card__title">Apple Macbook Pro 512GB SSD</h4>
+              <p class="card__text">Redesigned from scratch and completely revised.</p>
+            </div>
+            <div class="card__footer">
+              <button class="card__button card__button_wishlist">
+                <img src="images/heart.svg" alt="heart icon">
+                Wishlist
+              </button>
+              <button class="card__button card__button_cart">
+                <img src="images/shopping-bag.svg" alt="cart icon">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <div class="pagination">
+      <a class="pagination__link pagination__link_arrow" href="#"><span>&lt;</span></a>
+      <ul class="pagination__list">
+        <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+        <li class="pagination__item pagination__item_current">6</li>
+        <li class="pagination__item"><a class="pagination__link" href="#">7</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">8</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">9</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
+      </ul>
+      <a class="pagination__link pagination__link_arrow" href="#"><span>&gt;</span></a>
+    </div>
+  </main>
+
 </body>
 
 </html>
